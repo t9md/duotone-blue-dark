@@ -14,7 +14,7 @@ atom-text-editor {
   }
 
   .cursor {
-    border-color: var(--accent);
+    border-color: @syntax-cursor-color;
     border-left-width: 2px;
   }
 
@@ -23,7 +23,9 @@ atom-text-editor {
   }
 
   .bracket-matcher .region {
-    border-bottom: 1px solid var(--accent);
+    border-bottom: 1px solid @syntax-accent;
+    margin-top: -1px;
+    opacity: .7;
   }
 
   .invisible-character {
