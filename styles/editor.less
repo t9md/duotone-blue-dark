@@ -1,4 +1,3 @@
-
 // Editor styles (background, gutter, guides)
 
 atom-text-editor {
@@ -25,7 +24,7 @@ atom-text-editor {
   .bracket-matcher .region {
     border-bottom: 1px solid @syntax-accent;
     margin-top: -1px;
-    opacity: .7;
+    opacity: 0.7;
   }
 
   .invisible-character {
@@ -46,18 +45,17 @@ atom-text-editor {
   .current-result .region.region.region {
     border-radius: 0px;
     background-color: @syntax-result-marker-color;
-    transition: border-color .4s;
+    transition: border-color 0.4s;
   }
   .find-result .region.region.region {
     border: 2px solid transparent;
   }
   .current-result .region.region.region {
     border: 2px solid @syntax-result-marker-color-selected;
-    transition-duration: .1s;
+    transition-duration: 0.1s;
   }
 
   .gutter {
-
     .line-number {
       color: @syntax-gutter-text-color;
       -webkit-font-smoothing: antialiased;
@@ -66,7 +64,7 @@ atom-text-editor {
         bottom: -3px;
       }
       &.git-line-removed:after {
-        content: "";
+        content: '';
         position: absolute;
         left: 0px;
         bottom: 0px;
